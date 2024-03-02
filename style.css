@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("solar_system_planets.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+
+
+#game {
+    width: 600px;
+    height: 600px;
+    border: 1px solid white;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+#character {
+    width: 20px;
+    height: 20px;
+    background-color:yellow;
+    border-radius: 50%;
+    position: relative;
+    top: 400px;
+    left: 190px;
+    z-index: 1000000;
+}
+
+.block {
+    width: 600px;
+    height: 20px;
+    background-color: rgba(212, 202, 202, 0.829);
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+
+.hole {
+    width: 60px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+
+#score-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+#button-container {
+    position: absolute;
+    bottom: 15px;
+    left: 52%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+#download-button,
+#restart-button {
+    padding: 5px;
+    font-size: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 150PX;
+    border: 3px solid black
+    
+    
+}
+
+
+#restart-button:hover {
+    background-color: #942613;
+    color: white;
+    
+
+  }
+
+#download-button:hover {
+    background-color: #942613;
+    color: white;
+
+  }
